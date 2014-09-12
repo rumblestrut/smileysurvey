@@ -1,0 +1,44 @@
+/* How was your visit web survey styles */
+  div#edit-submitted-rate-your-visit-rate-your-visit-options-1-wrapper, div#edit-submitted-rate-your-visit-rate-your-visit-options-2-wrapper, div#edit-submitted-rate-your-visit-rate-your-visit-options-3-wrapper {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  div#edit-submitted-rate-your-visit-rate-your-visit-options-1-wrapper {
+    background-image: url("/sites/all/modules/custom/smileysurvey/images/face-happy.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  
+    div#edit-submitted-rate-your-visit-rate-your-visit-options-2-wrapper {
+    background-image: url("/sites/all/modules/custom/smileysurvey/images/face-confused.png");
+    background-repeat:no-repeat;
+    background-position: center top;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  
+    div#edit-submitted-rate-your-visit-rate-your-visit-options-3-wrapper {
+    background-image: url("/sites/all/modules/custom/smileysurvey/images/face-sad.png");
+    background-repeat:no-repeat;
+    background-position: center top;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+
+  div#edit-submitted-rate-your-visit-rate-your-visit-options-1, div#edit-submitted-rate-your-visit-rate-your-visit-options-2, div#edit-submitted-rate-your-visit-rate-your-visit-options-3 {
+  }
+  
+  #edit-submitted-rate-your-visit-rate-your-visit-options-1,#edit-submitted-rate-your-visit-rate-your-visit-options-2, #edit-submitted-rate-your-visit-rate-your-visit-options-3 {
+    margin-top: 90px;
+  }

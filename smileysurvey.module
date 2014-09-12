@@ -1,0 +1,43 @@
+<?php
+/**
+ * Display help and module information
+ */
+
+function smileysurvey_help($path, $arg) {
+  $output = ''; // declare the output variable
+  switch ($path) {
+    case "admin/help#smileysurvey":
+      $output = '<p>' . t("Displays the Smiley Survey styles and actions for the survey.") . '</p>';
+      break;
+  }
+  return $output;
+} // function smileysurvey_help
+
+/**
+ * Valid permissions for this module
+ * @return array An array of valid permissions for the smileysurvey modle
+ */
+ function smileysurvey_perm() {
+   return array('access smileysurvey content');
+ } // function smileysurvey_perm()
+
+  /*
+  * Add the CSS and JavaScript to the page
+  */
+function smileysurvey_init() {
+  global $node;
+  $smileysurvey_name = array();
+  $smileysurvey_name[] = 'secure/Forms/how-was-your-visit';
+  $go = FALSE;
+  foreach ($smileysurvey_name as $value) {
+    if (substr($_REQUEST['q'], 0, strlen($value)) == $value) {
+      $go = TRUE;
+      break;
+    }
+  }
+  if ($go) {
+    drupal_add_css(drupal_get_path('module', 'smileysurvey') .'/smileysurvey.css');
+    drupal_add_js(drupal_get_path('module', 'smileysurvey') .'/smileysurvey.js');
+  }
+  return;
+}
